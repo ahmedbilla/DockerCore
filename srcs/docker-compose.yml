@@ -60,7 +60,7 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: ${DATA_DIR_MARIADB:-/home/ahbilla/data/mariadb}
+      device: /home/ahbilla/data/mariadb
 
   wordpress_data:
     name: wordpress_data
@@ -68,7 +68,7 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: ${DATA_DIR_WORDPRESS:-/home/ahbilla/data/wordpress}
+      device: /home/ahbilla/data/wordpress
 
 networks:
   inception:
