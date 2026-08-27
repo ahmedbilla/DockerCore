@@ -14,8 +14,6 @@ services:
       - inception
     expose:
       - "3306"
-    ports:
-    - "3306:3306"
 
   wordpress:
     container_name: wordpress
@@ -61,7 +59,7 @@ volumes:
       type: none
       o: bind
       device: /home/ahbilla/data/mariadb
-
+    
   wordpress_data:
     name: wordpress_data
     driver: local
