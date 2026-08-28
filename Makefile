@@ -2,10 +2,8 @@ NAME	= inception
 
 SRCS	= ./srcs/docker-compose.yml
 
-DATA_DIR = $(HOME)/data
+DATA_DIR = /home/ahbilla/data
 
-export DATA_DIR_MARIADB := $(DATA_DIR)/mariadb
-export DATA_DIR_WORDPRESS := $(DATA_DIR)/wordpress
 
 all: $(NAME)
 
